@@ -9,11 +9,11 @@ Paths:
 
 Services:
     Application         -> Main Web Application, serves all content
-    GithubCommitFetcher -> (Runnable) Loads H2 Database with the latest commits
+    GithubCommitLoader  -> (Runnable) Loads H2 Database with the latest commits
 
 Build Tool: Maven
 
-To run: Simple call 'mvn package' and run the built jar
+To run: 'mvn package' and run the built jar
 
 Notes:
     1. It appears the Github Commit Search API is returning static data

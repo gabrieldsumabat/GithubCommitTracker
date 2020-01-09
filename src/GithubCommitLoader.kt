@@ -5,7 +5,7 @@ import org.json.JSONObject
 import java.lang.Thread.sleep
 
 
-class GithubCommitFetcher : Runnable {
+class GithubCommitLoader : Runnable {
 
     override fun run() {
         while(true) {

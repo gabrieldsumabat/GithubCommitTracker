@@ -13,7 +13,7 @@ class ApplicationTest {
     @BeforeTest
     fun prepare() {
         //Populate the Database table, appears that the API returns static data?
-        GithubCommitFetcher().loadGitCommitToDb()
+        GithubCommitLoader().loadGitCommitToDb()
     }
 
     @Test

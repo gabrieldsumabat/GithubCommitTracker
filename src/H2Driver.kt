@@ -53,10 +53,10 @@ object H2Driver {
             val st = conn.createStatement()
             val sqlString = "MERGE INTO GITCOMMITS KEY (commitId,name,date,message,url,repo) VALUES $values;"
             st.execute(sqlString)
-            st.close()
+            st.closeOnCompletion()
             conn.commit()
             conn.close()
-            println("Added Latest Github Commits to Memory!")
+            println("Added Latest Github Commits to Database!")
         } catch (e: Exception) {
             e.printStackTrace()
             if (!conn.isClosed) {
@@ -83,7 +83,7 @@ object H2Driver {
                     resultSet.getString("repo")
                     ))
             }
-            st.close()
+            st.closeOnCompletion()
             conn.close()
         } catch (e: Exception) {
             e.printStackTrace()

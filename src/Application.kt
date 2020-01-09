@@ -15,8 +15,8 @@ import kotlinx.html.*
 
 fun main(args: Array<String>) {
     //Start the Github Service Thread to Populate Database Table
-    val commitServiceThread = Thread(GithubCommitFetcher())
-    commitServiceThread.start()
+    val githubCommitLoader = Thread(GithubCommitLoader())
+    githubCommitLoader.start()
     //Start Main Web Application
     io.ktor.server.netty.EngineMain.main(args)
 }
