@@ -1,4 +1,4 @@
-package com.rubrikloud
+package com.rubikloud
 
 data class GithubCommit(val commitId:String,
                         val committerName:String,
