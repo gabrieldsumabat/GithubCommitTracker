@@ -1,4 +1,4 @@
-package com.rubrikloud
+package com.rubikloud
 
 import io.ktor.application.Application
 import io.ktor.application.call
