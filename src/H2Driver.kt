@@ -1,4 +1,4 @@
-package com.rubrikloud
+package com.rubikloud
 
 import java.sql.Connection
 import java.sql.DriverManager
