@@ -1,4 +1,4 @@
-package com.rubrikloud
+package com.rubikloud
 
 import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
