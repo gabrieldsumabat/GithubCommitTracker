@@ -1,4 +1,4 @@
-package com.rubrikloud
+package com.rubikloud
 
 import org.json.JSONArray
 import org.json.JSONObject
